@@ -540,7 +540,10 @@ public class Block extends Message {
         //
         // To prevent this attack from being possible, elsewhere we check that the difficultyTarget
         // field is of the right value. This requires us to have the preceeding blocks.
-        BigInteger target = getDifficultyTargetAsInteger();
+        // -------------------------------------------
+        // TODO: Implement MAC TimeTravel + Warp Drive
+        // -------------------------------------------
+        /*BigInteger target = getDifficultyTargetAsInteger();
 
         BigInteger h = getHash().toBigInteger();
         if (h.compareTo(target) > 0) {
@@ -550,7 +553,7 @@ public class Block extends Message {
                         + target.toString(16));
             else
                 return false;
-        }
+        }*/
         return true;
     }
 
