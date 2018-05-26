@@ -107,7 +107,7 @@ public class Transaction extends ChildMessage {
     /**
      * If feePerKb is lower than this, Bitcoin Core will treat it as if there were no fee.
      */
-    public static final Coin REFERENCE_DEFAULT_MIN_TX_FEE = Coin.valueOf(1000); // 0.01 mBTC
+    public static final Coin REFERENCE_DEFAULT_MIN_TX_FEE = Coin.valueOf(100000); // 0.01 mBTC
 
     /**
      * If using this feePerKb, transactions will get confirmed within the next couple of blocks.
